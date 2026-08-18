@@ -82,10 +82,10 @@ a{text-decoration:none;color:inherit}
 /* ============ Header ============ */
 .site-header{position:sticky;top:0;z-index:30;background:rgba(15,61,63,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(212,132,79,.22);transition:all 0.35s var(--ease)}
 .site-header.scrolled{background:rgba(8,18,36,.96);box-shadow:0 10px 30px rgba(0,0,0,.35)}
-.nav-wrap{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.nav-wrap{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:25px}
 .brand{display:flex;align-items:center;gap:12px;transition:transform 0.3s var(--ease)}
 .brand:hover{transform:scale(1.03)}
-.brand-logo{height:48px;width:auto;max-width:190px;object-fit:contain;border-radius:8px;background:#fff;padding:2px;border:1px solid rgba(212,132,79,.4);box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .35s var(--ease-spring),box-shadow .35s}
+.brand-logo{height:64px;width:auto;max-width:220px;object-fit:contain;border-radius:8px;background:#fff;padding:2px;border:1px solid rgba(212,132,79,.4);box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .35s var(--ease-spring),box-shadow .35s}
 .brand:hover .brand-logo{transform:scale(1.04);box-shadow:0 6px 22px rgba(212,132,79,.45)}
 .footer .brand-logo{height:54px;max-width:210px;margin-bottom:12px}
 .brand>span{position:relative;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--navy-3),var(--navy));color:var(--gold-light);font-weight:700;font-family:'Playfair Display',serif;font-size:16px;letter-spacing:.5px;border:1px solid rgba(212,132,79,.5);transition:box-shadow 0.4s}
@@ -345,7 +345,7 @@ a{text-decoration:none;color:inherit}
   body{font-size:17px}
   .menu-toggle{display:block;font-size:28px;padding:6px 10px}
   .nav-wrap{min-height:74px;gap:15px}
-  .brand-logo{height:40px;max-width:150px}
+  .brand-logo{height:48px;max-width:170px}
   .brand strong{font-size:18px}
   .brand small{font-size:11px}
   
@@ -465,7 +465,7 @@ a{text-decoration:none;color:inherit}
   
   .nav-wrap{min-height:68px;gap:10px}
   .menu-toggle{font-size:26px;padding:6px}
-  .brand-logo{height:36px;max-width:135px}
+  .brand-logo{height:44px;max-width:155px}
   .brand strong{font-size:18px}
   .brand small{font-size:11.5px}
   
