@@ -80,14 +80,14 @@ a{text-decoration:none;color:inherit}
 .hero .eyebrow,.page-hero .eyebrow{color:var(--gold-light)}
 
 /* ============ Header ============ */
-.site-header{position:sticky;top:0;z-index:30;background:rgba(15,61,63,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(212,132,79,.22);transition:all 0.35s var(--ease)}
-.site-header.scrolled{background:rgba(8,18,36,.96);box-shadow:0 10px 30px rgba(0,0,0,.35)}
-.nav-wrap{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.brand{display:flex;align-items:center;gap:12px;transition:transform 0.3s var(--ease)}
+.site-header{position:sticky;top:0;z-index:30;background:rgba(15,61,63,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(212,132,79,.25);transition:all 0.35s var(--ease)}
+.site-header.scrolled{background:rgba(8,18,36,.97);box-shadow:0 12px 35px rgba(0,0,0,.4)}
+.nav-wrap{min-height:108px;display:flex;align-items:center;justify-content:space-between;gap:25px;padding:6px 0}
+.brand{display:flex;align-items:center;gap:14px;transition:transform 0.3s var(--ease)}
 .brand:hover{transform:scale(1.03)}
-.brand-logo{height:64px;width:auto;max-width:220px;object-fit:contain;border-radius:8px;background:#fff;padding:2px;border:1px solid rgba(212,132,79,.4);box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .35s var(--ease-spring),box-shadow .35s}
-.brand:hover .brand-logo{transform:scale(1.04);box-shadow:0 6px 22px rgba(212,132,79,.45)}
-.footer .brand-logo{height:54px;max-width:210px;margin-bottom:12px}
+.brand-logo{height:82px;width:auto;max-width:290px;object-fit:contain;border-radius:12px;background:#fff;padding:4px;border:1.5px solid rgba(212,132,79,.45);box-shadow:0 6px 18px rgba(0,0,0,.28);transition:transform .35s var(--ease-spring),box-shadow .35s}
+.brand:hover .brand-logo{transform:scale(1.05);box-shadow:0 8px 26px rgba(212,132,79,.5)}
+.footer .brand-logo{height:58px;max-width:220px;margin-bottom:14px}
 .brand>span{position:relative;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--navy-3),var(--navy));color:var(--gold-light);font-weight:700;font-family:'Playfair Display',serif;font-size:16px;letter-spacing:.5px;border:1px solid rgba(212,132,79,.5);transition:box-shadow 0.4s}
 .brand:hover>span{box-shadow:0 0 20px rgba(212,132,79,.6)}
 .brand>span::before{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid rgba(212,132,79,.55);border-top-color:transparent;border-left-color:transparent;animation:crest-spin 7s linear infinite}
@@ -104,8 +104,8 @@ a{text-decoration:none;color:inherit}
 .nav-cta{background:linear-gradient(135deg,var(--gold-light),var(--gold) 60%,var(--gold-deep))!important;color:var(--navy)!important;padding:12px 24px!important;border-radius:30px!important;box-shadow:var(--shadow-gold);transition:transform .3s var(--ease-spring),box-shadow .3s!important;font-size:16px!important;font-weight:700}
 .nav-cta:hover{transform:translateY(-3px) scale(1.04)!important;box-shadow:0 16px 36px rgba(212,132,79,.5)!important}
 .nav-cta::after{display:none}
-.menu-toggle{display:none;border:0;background:none;font-size:28px;color:var(--gold-light);cursor:pointer;transition:transform 0.3s var(--ease)}
-.menu-toggle:hover{transform:scale(1.15)}
+.menu-toggle{display:none;border:1.5px solid rgba(212,132,79,.4);background:rgba(255,255,255,.08);width:54px;height:54px;border-radius:12px;font-size:36px;font-weight:bold;line-height:1;color:var(--gold-light);cursor:pointer;display:none;place-items:center;transition:all 0.3s var(--ease);box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.menu-toggle:hover{transform:scale(1.08);background:rgba(212,132,79,.2);border-color:var(--gold-light);box-shadow:0 6px 18px rgba(212,132,79,.35)}
 
 /* ============ Buttons ============ */
 .btn{position:relative;display:inline-flex;justify-content:center;align-items:center;padding:16px 32px;border-radius:30px;font-weight:700;font-size:16px;border:1px solid transparent;overflow:hidden;transition:transform .35s var(--ease-spring),box-shadow .35s var(--ease);isolation:isolate}
@@ -342,14 +342,13 @@ a{text-decoration:none;color:inherit}
 /* Large Phones & Tablets (481px - 768px) */
 @media(max-width:768px){
   html{font-size:17px}
-  body{font-size:17px}
-  .menu-toggle{display:block;font-size:28px;padding:6px 10px}
-  .nav-wrap{min-height:74px;gap:15px}
-  .brand-logo{height:48px;max-width:170px}
+  .menu-toggle{display:grid;place-items:center;font-size:38px;width:56px;height:56px;flex:0 0 auto}
+  .nav-wrap{min-height:92px;gap:15px;padding:4px 0}
+  .brand-logo{height:68px;max-width:240px;border-radius:10px}
   .brand strong{font-size:18px}
   .brand small{font-size:11px}
   
-  .nav{display:flex;max-height:0;overflow:hidden;position:absolute;top:74px;left:0;right:0;background:rgba(15,61,63,.98);border-bottom:1px solid rgba(212,132,79,.3);padding:0;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 15px 30px rgba(0,0,0,.35);transition:max-height .4s var(--ease),padding .4s var(--ease);z-index:999}
+  .nav{display:flex;max-height:0;overflow:hidden;position:absolute;top:92px;left:0;right:0;background:rgba(15,61,63,.98);border-bottom:1px solid rgba(212,132,79,.3);padding:0;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 15px 30px rgba(0,0,0,.35);transition:max-height .4s var(--ease),padding .4s var(--ease);z-index:999}
   .nav.open{max-height:540px;padding:14px 0}
   .nav a{padding:16px 6%;border-bottom:1px solid rgba(212,132,79,.12);font-size:17px;color:rgba(255,255,255,.92);font-weight:600}
   .nav a:last-child{border-bottom:none}
@@ -463,13 +462,13 @@ a{text-decoration:none;color:inherit}
   body{font-size:18px}
   .container{width:min(92%, 100% - 24px);margin:auto}
   
-  .nav-wrap{min-height:68px;gap:10px}
-  .menu-toggle{font-size:26px;padding:6px}
-  .brand-logo{height:44px;max-width:155px}
+  .nav-wrap{min-height:84px;gap:12px;padding:4px 0}
+  .menu-toggle{display:grid;place-items:center;font-size:36px;width:52px;height:52px;flex:0 0 auto}
+  .brand-logo{height:58px;max-width:205px;border-radius:10px;padding:3px}
   .brand strong{font-size:18px}
   .brand small{font-size:11.5px}
   
-  .nav{top:68px}
+  .nav{top:84px}
   .nav a{padding:15px 6%;font-size:18px}
   .nav-cta{margin:12px 4% 14px;padding:14px 20px!important;font-size:18px!important}
   
@@ -1031,10 +1030,11 @@ small {
 
   .menu-toggle {
     flex: 0 0 auto;
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     display: grid;
     place-items: center;
+    font-size: 38px;
     padding: 0;
     margin: 0;
   }
@@ -1187,16 +1187,18 @@ small {
   }
 
   .nav-wrap {
-    min-height: 68px;
+    min-height: 84px;
   }
 
   .brand {
-    gap: 8px;
+    gap: 12px;
   }
 
   .brand-logo {
-    height: 36px;
-    max-width: min(42vw, 135px);
+    height: 58px;
+    max-width: min(60vw, 210px);
+    border-radius: 10px;
+    padding: 3px;
   }
 
   .brand strong {
